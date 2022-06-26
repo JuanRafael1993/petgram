@@ -1,0 +1,23 @@
+@mixin fadeIn {
+	@keyframes fadeInKeyFrame {
+		from {
+			filter: blur(5);
+			opacity: 0;
+		}
+		to {
+			filter: blur(0);
+			opacity: 1;
+		}
+	}
+}
+
+@mixin caida {
+	@keyframes caidaTop {
+		from {
+			transform: translateY(-100px) scale(0.5);
+		}
+		to {
+			transform: translateY(0) scale(0.5);
+		}
+	}
+}
